@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-yellow-300">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gatitos aleatorios</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c2e0b3f0af.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-yellow-50 p-4 h-full mt-1 mb-1">
+  <header class="w-full grid justify-center gap-1 px-4 pb-4">
+    <h1 id="title" class="text-center">Michis App</h1>
+    <div class="w-full grid grid-cols-2 gap-3">
+      <button id="change-dog" onclick="dogApi()">Quiero perritos</button>
+      <button id="change-cat" onclick="catApi()">Quiero gatitos</button>
+      <button class="col-span-2 hidden" id="backBtn">Volver atras</button>
+    </div>
+  </header>
+
+  <section id="randomImages" class="mb-5">
+    <h2 class="text-center randomImagesTitle">Michis aleatorios</h2>
+
+    <div class="randomImagesMainContainer grid grid-cols-2 gap-6 items-center sm:grid-cols-3">
+      <article class="relative randomImageContainer animate-pulse bg-slate-500">
+        <i class="likeIcon cursor-pointer"></i>
+      </article>
+    </div>
+    
+    <button id="reloadbtn" onclick="reloadRandomImages()">Quiero otros</button>
+    <button id="loadMorebtn">Necesito mas!</button>
+  </section>
+  
+  <section id="favoritesMichis">
+    <h2 id="favoritesTitle">Michis favoritos</h2>
+    <div class="grid grid-cols-2 gap-6 favoriteImagesMainContainer sm:grid-cols-3 md:grid-cols-4">
+     
+    </div>
+  </section>
+
+  <section id="genericSection">
+    <div class="grid grid-cols-2 gap-6 genericSectionMainContainer">
+      <article class="relative genericSectionContainer animate-pulse w-40 h-52 rounded-lg bg-gray-300">
+        <i class="likeIcon cursor-pointer"></i>
+      </article>
+      <article class="relative genericSectionContainer animate-pulse w-40 h-52 rounded-lg bg-gray-300">
+        <i class="likeIcon cursor-pointer"></i>
+      </article>
+      <article class="relative genericSectionContainer animate-pulse w-40 h-52 rounded-lg bg-gray-300">
+        <i class="likeIcon cursor-pointer"></i>
+      </article>
+      <article class="relative genericSectionContainer animate-pulse w-40 h-52 rounded-lg bg-gray-300">
+        <i class="likeIcon cursor-pointer"></i>
+      </article>
+      <article class="relative genericSectionContainer animate-pulse w-40 h-52 rounded-lg bg-gray-300">
+        <i class="likeIcon cursor-pointer"></i>
+      </article>
+      <article class="relative genericSectionContainer animate-pulse w-40 h-52 rounded-lg bg-gray-300">
+        <i class="likeIcon cursor-pointer"></i>
+      </article>
+      <article class="relative genericSectionContainer animate-pulse w-40 h-52 rounded-lg bg-gray-300">
+        <i class="likeIcon cursor-pointer"></i>
+      </article>
+      <article class="relative genericSectionContainer animate-pulse w-40 h-52 rounded-lg bg-gray-300">
+        <i class="likeIcon cursor-pointer"></i>
+      </article>
+      <article class="relative genericSectionContainer animate-pulse w-40 h-52 rounded-lg bg-gray-300">
+        <i class="likeIcon cursor-pointer"></i>
+      </article>
+      <article class="relative genericSectionContainer animate-pulse w-40 h-52 rounded-lg bg-gray-300">
+        <i class="likeIcon cursor-pointer"></i>
+      </article>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./src/nodes.js"></script>
+  <script src="./src/main.js"></script>
+  <script src="./src/navigation.js"></script>
+</body>
+</html>

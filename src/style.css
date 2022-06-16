@@ -1,0 +1,38 @@
+@tailwind base;
+
+@layer utilities {
+    button {
+        @apply bg-yellow-200 rounded-lg p-1 hover:bg-yellow-400 transform hover:translate-y-1 hover:transition-all 
+    }
+
+    img {
+        @apply rounded-lg w-40 shadow-lg justify-self-center h-full object-cover
+    }
+
+    #randomImages, #favoritesMichis, #genericSection{
+        @apply grid place-content-center gap-4
+    }
+
+    /* #randomImages article, #favoritesMichis article { 
+        @apply grid gap-3 items-center
+
+    } */
+
+    .randomImageContainer {
+        @apply relative
+    }
+
+    .likeIcon--liked {
+        @apply text-red-400
+    }
+
+    .likeIcon {
+        @apply absolute bottom-2 left-2 text-3xl text-white cursor-pointer transition-colors 
+    }
+
+    h2 {
+        @apply text-center
+    }
+}
+@tailwind components;
+@tailwind utilities;
